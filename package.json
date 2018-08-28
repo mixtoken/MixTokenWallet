@@ -9,9 +9,10 @@
     "test": "jest"
   },
   "dependencies": {
+    "antd-mobile-rn": "^2.2.1",
+    "babel-plugin-import": "^1.8.0",
     "immutable": "^3.8.2",
     "lvyii_storage": "^0.0.25",
-    "native-base": "^2.7.2",
     "react": "16.4.1",
     "react-native": "0.56.0",
     "react-native-router-flux": "^4.0.1",

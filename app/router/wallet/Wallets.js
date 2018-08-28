@@ -7,17 +7,7 @@ import {
   Text,
   View,
 } from 'react-native';
-import {
-  Container,
-  Content,
-  Header,
-  Left,
-  Body,
-  Right,
-  Button,
-  Icon,
-  Title
-} from 'native-base';
+import { Button, WingBlank } from 'antd-mobile-rn';
 import {Actions} from 'react-native-router-flux'
 import {connect} from 'react-redux'
 
@@ -28,16 +18,14 @@ class Wallets extends PureComponent {
   
   render() {
     return (
-      <Container>
-        <Content>
-          <View>
-            <Text>Wallets</Text>
-          </View>
-          <Button primary onPress={() => Actions.IMPORT_EOS_WALLET()}>
-            <Text> 导入EOS钱包 </Text>
-          </Button>
-        </Content>
-      </Container>
+      <View>
+        <View>
+          <Text>Wallets</Text>
+        </View>
+        <WingBlank>
+          <Button type="primary" onClick={() => Actions.IMPORT_EOS_WALLET()}>导入EOS钱包</Button>
+        </WingBlank>
+      </View>
     )
   }
 }

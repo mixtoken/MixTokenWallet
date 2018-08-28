@@ -7,16 +7,6 @@ import {
   Text,
   View,
 } from 'react-native';
-import {
-  Container,
-  Header,
-  Left,
-  Body,
-  Right,
-  Button,
-  Icon,
-  Title
-} from 'native-base';
 import {Actions} from 'react-native-router-flux'
 import {connect} from 'react-redux'
 
@@ -27,11 +17,9 @@ class ImportEosWallet extends PureComponent {
   
   render() {
     return (
-      <Container>
-        <View>
-          <Text>ImportEosWallet</Text>
-        </View>
-      </Container>
+      <View>
+        <Text>ImportEosWallet</Text>
+      </View>
     )
   }
 }
